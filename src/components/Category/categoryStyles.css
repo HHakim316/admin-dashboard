@@ -1,0 +1,124 @@
+/* src/components/Category/categoryStyles.css */
+/* ===== Existing Styles ===== */
+.mdl-demo {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.node > .toggle {
+  color: #4CAF50;
+}
+
+.search {
+  margin-bottom: 10px;
+}
+
+/* ===== New Styles ===== */
+/* Button Styles */
+.create-category-btn {
+  padding: 8px 12px;
+  background: #4CAF50 !important;
+  color: white !important;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.create-category-btn:hover {
+  background: #45a049 !important;
+}
+
+/* Container for dropdown + button */
+.category-selector-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* Form Inputs */
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-content button[type="submit"] {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Delete Button */
+.delete-category-btn {
+  padding: 8px 12px;
+  background: #f44336 !important;
+  color: white !important;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.delete-category-btn:hover {
+  background: #d32f2f !important;
+}
+
+/* Move To Dropdown */
+.move-to-dropdown {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
